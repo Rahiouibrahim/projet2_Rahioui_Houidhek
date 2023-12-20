@@ -35,7 +35,7 @@ class PageController
                 $this->login();
                 break;
             default:
-                $this->home();
+                $this->register();
                 break;
         }
     }

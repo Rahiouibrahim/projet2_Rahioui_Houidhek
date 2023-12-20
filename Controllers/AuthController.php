@@ -1,6 +1,6 @@
 <?php
 
-require_once './models/AuthModel.php';
+require_once './Models/AuthModel.php';
 
 class AuthController
 {
