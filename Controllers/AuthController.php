@@ -54,7 +54,7 @@ class AuthController
                 exit();
             } else {
                 echo 'pas correct';
-                //header('Location: login.php?error=1');
+                header('Location: login.php?error=1');
                 exit();
             }
         }

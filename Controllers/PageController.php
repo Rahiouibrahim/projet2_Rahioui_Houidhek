@@ -35,7 +35,7 @@ class PageController
                 $this->login();
                 break;
             default:
-                $this->register();
+                $this->home();
                 break;
         }
     }
@@ -52,7 +52,7 @@ class PageController
 
         // Logique pour la page de connexion
         // Afficher la page de connexion
-        require_once('./views/login.php');
+        require_once('./Views/login.php');
 
         // Gérer la soumission du formulaire
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -63,7 +63,7 @@ class PageController
     public function register()
     {
         // Logique pour la page d'inscription
-        require_once('./views/register.php');
+        require_once('./Views/register.php');
         echo "Page d'inscription";
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -74,7 +74,7 @@ class PageController
     public function products()
     {
         // Logique pour la page du tableau de bord
-        require_once('./views/products.php');
+        require_once('./Views/products.php');
 
         echo "Page products";
     }
